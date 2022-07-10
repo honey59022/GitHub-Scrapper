@@ -28,7 +28,6 @@ function getIssues(url,topicName,repoName){
             arr.push(link);
         }
 
-        console.log(arr.length);
         let text=JSON.stringify(arr);
         // makeJSONFile(topicName,repoName,text);
         makePDFFile(topicName,repoName,text)
